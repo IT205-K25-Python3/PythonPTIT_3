@@ -4,13 +4,11 @@ students = [
     {"name": "Chi", "score": 9}
 ]
 
-for student in students:
-    print(f"ten: {student['name']}, diem: {student['score']}")
+max_score = max(student["score"] for student in students)
+print(f"diem cao nhat: {max_score}")
 
-total = sum(student["score"] for student in students)
-average = total / len(students)
-print(f"diem trung binh: {average}")
+top_students = [student for student in students if student["score"] == max_score]
 
-
-top_student = max(students, key=lambda x: x["score"])
-print(f"hoc sinh co diem cao nhat: {top_student['name']}")
+print("hoc sinh co diem cao nhat:")
+for student in top_students:
+    print(f"{student['name']}: {student['score']}")
