@@ -8,6 +8,10 @@ new_product = {"id": 4, "name": "PC", "quantity": 3}
 inventory.append(new_product)
 print("Da them sp moi")
 
+# print("danh sach kho hang sau update:")
+# for product in inventory:
+#     print(product)
+
 update_id = 2
 new_quantity = 25
 for product in inventory:
@@ -17,6 +21,10 @@ for product in inventory:
         break
 else:
     print("khong tim thay sp")
+
+# print("danh sach kho hang sau update:")
+# for product in inventory:
+#     print(product)
 
 delete_id = 1
 for i in range(len(inventory)):
