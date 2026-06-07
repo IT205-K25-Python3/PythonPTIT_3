@@ -4,7 +4,7 @@ inventory = [
     {"id": 3, "name": "Keyboard", "quantity": 10}
 ]
 
-new_product = {"id": 4, "name": "Monitor", "quantity": 3}
+new_product = {"id": 4, "name": "PC", "quantity": 3}
 inventory.append(new_product)
 print("Da them sp moi")
 
